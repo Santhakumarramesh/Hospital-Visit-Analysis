@@ -1,68 +1,92 @@
-# 🏥 Hospital Visit Analysis
+# 🏥 Hospital Visits & Revenue Analysis
 
-This project analyzes hospital visit data using Python and SQLite to extract valuable insights related to patients, doctors, diagnoses, and revenue trends.
-
-## 📂 Project Overview
-
-- **Objective**: Normalize hospital visit data, store it in a relational database, and perform analytical queries to derive business insights.
-- **Tools Used**:  
-  - `pandas` for data manipulation  
-  - `sqlite3` for database operations  
-  - `matplotlib` for visualization  
-
-## 🗃️ Dataset
-
-The dataset includes columns such as:
-- Date of Admit / Discharge
-- Doctor and Department
-- Hospital Branch
-- Patient ID and Name
-- Revenue per Visit
-
-> 📁 Sample File Used: `Hospital_Visits.csv`
-
-## ⚙️ Process Flow
-
-1. **Data Cleaning & Preparation**:  
-   Extract unique tables for Patients, Doctors, and Diagnoses.
-
-2. **Database Normalization**:  
-   Normalize into 3rd Normal Form and store in SQLite tables.
-
-3. **SQL Queries for Insights**:
-   - Revenue by Department
-   - Average Fee by Diagnosis
-   - Most Frequent Patients
-   - Most Active Doctors
-   - Monthly Revenue Trend
-
-4. **Visualizations**:  
-   Generate bar and line plots for business-friendly summaries.
-
-## 📊 Visual Output Examples
-
-- Total Revenue by Department  
-- Top 10 Diagnoses by Average Fee  
-- Monthly Revenue Trend  
-- Most Frequent Patients  
-- Most Active Doctors
-
-## 📁 Files
-
-| File | Description |
-|------|-------------|
-| `Hospital_Visit_Analysis.ipynb` | Jupyter notebook with full code & plots |
-| `Hospital_Visits.csv` | Sample input dataset |
-| `hospital_visits_normalized.db` | Output SQLite database |
-| `README.md` | This file |
-
-## 🚀 How to Run
-
-1. Clone this repository
-2. Make sure `Hospital_Visits.csv` is in the same folder
-3. Run `Hospital_Visit_Analysis.ipynb` in Jupyter or VS Code
+This project analyzes hospital visit data to extract meaningful insights, such as revenue trends, patient visit frequency, and doctor activity. The goal is to simulate how hospitals can use data analytics to improve resource allocation, understand patient behavior, and monitor departmental performance.
 
 ---
 
-✅ Feel free to extend this analysis by joining with external health datasets or adding a dashboard using Streamlit or Dash.
+## 📁 Dataset
+
+**Source:** Public sample dataset (uploaded manually)
+
+**Filename:** `Hospital_Visits_Revenue.csv`
+
+**Key Features:**
+- `Date of Admit`, `Date of Discharge`
+- `Doctor`, `Department`, `Hospital Branch`
+- `Patient ID`, `Patient Name`
+- `Revenue`, `Patient Risk Profile`, etc.
+
+---
+
+## 🔍 Project Workflow
+
+1. **Load and preprocess CSV**
+2. **Normalize data** into separate dataframes:
+   - `Patients`
+   - `Doctors`
+   - `Diagnoses`
+3. **Merge into a unified format** for analysis
+4. **Run SQL-like queries using SQLite**
+5. **Generate visualizations** for insights
+
+---
+
+## 📊 Key Insights
+
+1. **Total Revenue by Department**
+2. **Average Fee by Diagnosis**
+3. **Most Frequent Patients**
+4. **Most Active Doctors**
+5. **Monthly Revenue Trends**
+
+Each insight is visualized using clear and readable bar/line plots with labeled axes and rotated ticks for clarity.
+
+---
+
+## 🛠 Tools & Libraries
+
+- Python 3.x
+- `pandas` for data manipulation
+- `sqlite3` for in-memory SQL operations
+- `matplotlib` for data visualization
+
+---
+
+## 🧠 How to Use
+
+1. Clone the repository
+2. Make sure `Hospital_Visits_Revenue.csv` is in the same folder
+3. Open `Hospital_Visit_Analysis.ipynb` in Jupyter Notebook or VSCode
+4. Run all cells to:
+   - Normalize the data
+   - Generate insights
+   - View visualizations
+
+---
+
+## ✅ Output Preview
+
+> 📈 Visualizations included:
+- Revenue bar charts
+- Diagnosis cost trends
+- Monthly line charts
+
+---
+
+## 📂 Repo Structure
+
+├── Hospital_Visit_Analysis.ipynb
+├── Hospital_Visits_Revenue.csv
+└── README.md
+
+---
+
+## 💡 Author
+
+**Santhakumar Ramesh**  
+MPS in Data Science and Applications  
+University at Buffalo  
+[GitHub](https://github.com/Santhakumarramesh)
+
+---
 
