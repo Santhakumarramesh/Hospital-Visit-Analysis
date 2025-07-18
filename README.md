@@ -73,14 +73,6 @@ Each insight is visualized using clear and readable bar/line plots with labeled 
 
 ---
 
-## 📂 Repo Structure
-
-├── Hospital_Visit_Analysis.ipynb
-├── Hospital_Visits_Revenue.csv
-└── README.md
-
----
-
 ## 💡 Author
 
 **Santhakumar Ramesh**  
